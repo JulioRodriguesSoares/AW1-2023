@@ -1,0 +1,169 @@
+
+.imgtext {
+    display: flex;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.body{
+	font-family: sans-serif;
+	background: rgba(202, 72, 20, 0.658);
+	background: -moz-linear-gradient(90deg, rgba(202, 72, 20, 0.658) 0%, rgb(51, 124, 48) 50%, rgb(30, 80, 138) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(202, 72, 20, 0.658)) 0%, rgb(51, 124, 48 50%, rgb(30, 80, 138) 100%);
+	background: linear-gradient(90deg, rgba(202, 72, 20, 0.658)) 0%, rgb(51, 124, 48 50%, rgb(30, 80, 138) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="##CA4814A8",endColorstr="#1e508a",GradientType=1);
+	width: 100%;
+	color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.video1 {
+    flex: 2;
+    height: 200px;
+    width: 150px;
+    display: inline-block;  
+    transition: ease;
+}
+
+.video2 {
+    flex: 2;
+    height: 200px;
+    width: 150px;
+    display: inline-block;  
+    transition: ease-in;
+}
+
+.video3 {
+    flex: 2;
+    height: 200px;
+    width: 150px;
+    display: inline-block;  
+    transition: ease-out;
+}
+
+.video4 {
+    flex: 2;
+    height: 200px;
+    width: 150px;
+    display: inline-block;  
+    transition: ease-in-out;
+}
+
+.video5 {
+    flex: 2;
+    height: 200px;
+    width: 150px;
+    display: inline-block;  
+    transition: step-start;
+}
+
+.imgme {
+    flex: 2;
+    height: 200px;
+    width: 175px;
+    display: inline-block; 
+    padding: 20px;
+    transform: translate(60px, 80px);
+}
+
+.imgagua {
+    flex: 2;
+    height: 200px;
+    width: 175px;
+    display: inline-block; 
+    padding: 20px;
+    transform: rotate(20deg);
+}
+
+.imgterra {
+    flex: 2;
+    height: 200px;
+    width: 175px;
+    display: inline-block; 
+    padding: 20px;
+    transform: scaleY(0.5);
+}
+
+.imgrama {
+    flex: 2;
+    height: 200px;
+    width: 175px;
+    display: inline-block; 
+    padding: 20px;
+
+}
+
+.metal {
+    flex: 3;
+    color: rgba(107, 107, 107, 0.932);
+}
+
+.agua {
+    flex: 2;
+    color: rgb(32, 118, 175);
+}
+
+.terra {
+    flex: 2;
+    color: rgba(218, 104, 59, 0.637);
+}
+
+.grama {
+    flex: 2;
+    color: rgb(32, 105, 32);
+}
+
+.texto {
+    flex: 3;
+    display: inline-block;
+    vertical-align: center; 
+
+}
+
+.tabela{
+	width: 100%;
+	background: rgba(214, 205, 205, 0.555);
+	background: -moz-linear-gradient(45deg,  rgba(240, 85, 47, 0.877) 0%, rgba(120, 196, 219, 0.767) 50%, rgba(76, 138, 82, 0.253) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(240, 85, 47, 0.877) 0%, rgba(120, 196, 219, 0.363) 50%, rgba(76, 138, 82, 0.438) 100%);
+	background: linear-gradient(45deg,  rgba(240, 85, 47, 0.877) 0%, rgba(120, 196, 219, 0.767) 50%, rgba(76, 138, 82, 0.438) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#F0552F",endColorstr="#4C8A52",GradientType=1);
+    border: 13px solid transparent;
+    border-image: linear-gradient(to right, #824121, #1c4173, #145e1e);
+}
+
+.button{
+    background-color: red;
+    transition: background-color 3s ease;
+}
+
+.button:hover {
+    background-color: blueviolet;
+
+}
+
+.selecao {
+    background-color: blue;
+}
+
+.selecao:checked {
+    background-color: white;
+}
+
+.delay {
+    background-color: #1c4173;
+}
+
+.delay:hover {
+    background-color: #824121;
+    transition-delay: background-color 2s ;
+}
+
+.opcao {
+    background-color: aqua;
+}   
+.opcao:hover {
+    background-color: bisque;
+    transition: step-end;
+}
