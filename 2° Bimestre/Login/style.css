@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+.body{
+    margin: 0;
+    background: linear-gradient(90deg, rgba(9,80,144,1) 0%, rgba(92,60,198,1) 50%, rgba(150,3,56,1) 100%);
+    background-color: rgb(9,80,144);
+    font-family: 'Merriweather', serif;
+}
+
+.main{
+    position:relative;
+    top: 1vh;
+    left: 1vw;
+    height: 98vh;
+    width: 98vw;
+    background-color: rgb(116, 48, 48);
+    border-radius: 50px;
+    display: flex;
+}
+
+.esquerda{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.esquerda > h2{
+    color: rgb(155, 95, 105);
+}
+
+.pocao{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+
+.direita{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    background-color: #665a81;
+    padding: 5vh;
+    border-radius: 20px;
+    height: 50vh;
+    width: 15vw;
+    color: rgb(82, 27, 27);
+
+}
+
+label{
+        font-size: 3vh;
+        display: block;
+        margin-top: 4vh;
+        margin-bottom: 1vh;
+ }
+
+ @media screen and (max-width: 600px){
+    main{
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 2vh;
+    }
+    
+    form{
+        width: 80vw;
+    }
+}
