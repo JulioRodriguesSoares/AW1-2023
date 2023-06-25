@@ -1,0 +1,109 @@
+body {
+	margin: 0;
+	background-color: rgb(221, 171, 236);
+}
+
+header {
+    background: rgb(28, 76, 107);
+    background: -moz-linear-gradient(150deg, rgb(43, 69, 126) 0%, rgb(129, 57, 177) 50%, rgb(202, 60, 103) 100%);
+    background: -webkit-linear-gradient(150deg, rgba(43, 69, 126) 0%, rgba(129, 57, 177) 50%, rgba(202, 60, 103) 100%);
+    background: linear-gradient(150deg, rgba(43, 69, 126) 0%, rgba(129, 57, 177) 50%, rgba(202, 60, 103) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c44dd0",endColorstr="#d268ff",GradientType=1);
+	padding: 30px;
+}
+
+img{
+    width: 50vw;
+}
+
+main{
+	width: 90vw;
+	background-color: rgb(42, 143, 118);
+	margin: auto;
+	margin-top: 10px;
+	padding: 10px;
+	border-radius:10px;
+}
+
+h1 {
+	margin: 0;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+nav li {
+	margin-right: 20px;
+}
+
+li:hover{
+	background-color: rgb(129, 67, 101);
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	
+}
+
+main {
+	padding: 20px;
+}
+
+
+#menu, .menu {
+	display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+	nav{
+		display: none;
+	}
+
+	#menu:checked ~ nav {
+		display: block;
+		
+	}
+
+	.menu { 
+		display: block; 
+		position: absolute;
+		text-align: center;
+		background: transparent; 
+		padding: 0 px; 
+		float: right;
+		
+	
+	}
+
+	header {
+		text-align: center;
+	}
+
+	nav {
+		display: none;
+	}
+
+	nav ul {
+		flex-direction: column;
+	
+	
+	}
+
+	nav li {
+		margin: 10px 0;
+	}
+
+	nav a {
+		display: block;
+	}
+	
+}
