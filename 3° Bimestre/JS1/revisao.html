@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisao</title>
+</head>
+<body>
+    <p> </p>
+</body>
+    <script>
+
+        var nome = prompt("Escreva seu nome");
+
+        var idade = prompt("Digite sua idade");
+
+        var p = document.getElementsByTagName("p")[0];
+
+        p.innerText = ` Seu nome é ${nome} e voce tem ${idade} anos.`;
+
+        p.style.textAlign = "center";
+        p.style.color = "blue";
+        p.style.fontSize = "30px";
+        
+    </script>
+</html>
