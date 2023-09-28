@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="btn1"> Botão 01 </button>
+    <button id="btn2"> Botão 02 </button>
+    
+    <div id="d1">   </div>
+    <div id="d2">   </div>
+    <div id="d3">   </div>
+
+    <hr>
+
+    <script>
+
+        var d1=document.querySelector("#d1");
+        var d2=document.querySelector("#d2");
+        var d3=document.querySelector("#d3");
+
+        var btns = document.querySelectorAll("button");
+
+        function random(number){
+            return Math.floor(Math.random()* (number +1));
+        }
+        
+        function mudacor(e){
+            var rndCol = "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+            e.target.style.backgroundColor = rndCol;
+        };
+
+        d1.onclick = mudacor;
+        d2.onclick = mudacor;
+        d3.onclick = mudacor;
+
+        btns.forEach(btn => btn.onclick = mudacor)
+
+    </script>
+</body>
+</html>
